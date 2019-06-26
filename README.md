@@ -1,6 +1,6 @@
 # Arduino-PlatformIO Simulator for PC
 
-Simulator - Arduino source codes is compiled and executed as PC applications
+Simulator !? Arduino source codes is compiled and executed as PC applications
 
 Can be used for edication, tests and debuging, for working with CommPorts, Internet, Math...
 
@@ -38,6 +38,8 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 * https://community.platformio.org
 * https://www.comet.bg/?cid=92
 * 
+
+
 
 >If you want to help / support:   
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ESUP9LCZMZTD6)
