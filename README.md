@@ -9,7 +9,7 @@ Your sources can work on each Arduino board
 * **Version: 1.0.0**
 * **Windows - for now**
 * Linux/Mac - later
-* RaspberryPI is a Linux - can support the board - later
+* Raspberry PI is a Linux - this platform can support the board - later
 
 ![Project](https://raw.githubusercontent.com/Wiz-IO/LIB/master/images//arduino-simulator.png) 
 
