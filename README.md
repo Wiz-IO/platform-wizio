@@ -9,6 +9,8 @@ Can be used for edication, tests and debuging, for working with CommPorts, Inter
 * Linux/Mac - later
 * RaspberryPI is a Linux - can support the board - later
 
+![Project](https://raw.githubusercontent.com/Wiz-IO/LIB/master/arduino-simulator.png) 
+
 **Compiler**
 * Windows - MinGW (GCC) - install and add to PATH C:/MinGW/bin;
 * Linux GCC
