@@ -10,11 +10,15 @@ Can be used for edication, tests and debuging, for working with CommPorts, Inter
 * RaspberryPI is a Linux - can support the board - later
 
 **Compiler**
-* Windows - MinGW (GCC) - istall and add to PATH
+* Windows - MinGW (GCC) - install and add to PATH C:/MinGW/bin;
 * Linux GCC
 * Mac GCC
 
+## Install Platform (NOT READY)
 
+PIO Home > Platforms > Advanced Installation 
+
+paste https://github.com/Wiz-IO/platform-wizio.git
 
 
 ## Thanks to
