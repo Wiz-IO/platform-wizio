@@ -1,6 +1,6 @@
 # Arduino-PlatformIO Simulator for PC
 
-Simulator !? Arduino source codes is compiled and executed as PC applications
+**Simulator !?!?** Arduino source codes is compiled and executed as PC applications
 
 Can be used for edication, tests and debuging, for working with CommPorts, Internet, Math...
 
