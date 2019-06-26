@@ -6,7 +6,7 @@ Can be used for edication, tests and debuging, for working with CommPorts, Inter
 Your sources can work on each Arduino board
 
 **A few words in the beginning**
-* **Version: 1.0.0**
+* **Version: 1.0.0** very beta
 * **Windows - for now**
 * Linux/Mac - later
 * Raspberry PI is a Linux - this platform can support the board - later
