@@ -20,6 +20,8 @@ Your sources can work on each Arduino board
 
 ## Install Platform (NOT READY)
 
+First install GCC/MinGW on PC
+
 PIO Home > Platforms > Advanced Installation 
 
 paste https://github.com/Wiz-IO/platform-wizio.git
