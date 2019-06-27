@@ -31,7 +31,7 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 
 ## Thanks to
 
-* Ivan Kravets ( PlatformIO )
+* Ivan Kravets - [PlatformIO](https://platformio.org/)
 * [comet.bg](https://www.comet.bg/?cid=92)
 
 ## Used source codes from
