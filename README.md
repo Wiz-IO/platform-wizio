@@ -32,7 +32,7 @@ PIO Home > Platforms > Advanced Installation
 paste https://github.com/Wiz-IO/platform-wizio.git
 
 **Manual Install / Reinstall**
-*
+
 
 ## Thanks to
 
