@@ -17,7 +17,7 @@ Your sources can work on each Arduino board
 
 **Compiler**
 * Windows - MinGW (GCC) - install and add to PATH C:/MinGW/bin;
-* * [VIDEO](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
+* * How to Install MinGW [VIDEO](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
 * Linux GCC
 * Mac GCC
 
