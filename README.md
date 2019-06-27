@@ -23,7 +23,7 @@ Your sources can work on each Arduino board
 * Mac GCC
 
 
-## Install Platform (NOT READY)
+## Install Platform (NOT READY - do not install while this)
 
 First install GCC/MinGW on PC
 
