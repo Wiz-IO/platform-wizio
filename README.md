@@ -34,7 +34,7 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 * Ivan Kravets ( PlatformIO )
 * [comet.bg](https://www.comet.bg/?cid=92)
 
-## Used Sources from:
+## Used source codes from
 
 * [Core Arduino](https://github.com/arduino/Arduino)
 * [Esp32](https://github.com/espressif/arduino-esp32)
@@ -48,7 +48,6 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 
 * https://community.platformio.org
 * https://www.comet.bg/?cid=92
-* 
 
 
 
