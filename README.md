@@ -36,7 +36,7 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 
 ## Used Sources from:
 
-* Core [Arduino IDE](https://github.com/arduino/Arduino)
+* [Core Arduino](https://github.com/arduino/Arduino)
 * [Esp32](https://github.com/espressif/arduino-esp32)
 * [RasPiArduino](https://github.com/me-no-dev/RasPiArduino)
 * [Google Cloud Platform](https://github.com/GoogleCloudPlatform/google-cloud-iot-arduino)
