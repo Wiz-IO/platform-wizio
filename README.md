@@ -21,7 +21,7 @@ Your sources can work on each Arduino board
 * Linux GCC
 * * How do I install gcc on Ubuntu Linux [VIDEO](https://www.youtube.com/watch?v=cotkJrewAz0)
 * Mac GCC
-* * 
+
 
 ## Install Platform (NOT READY)
 
