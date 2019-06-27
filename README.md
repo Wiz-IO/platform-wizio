@@ -34,7 +34,17 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 * Ivan Kravets ( PlatformIO )
 * [comet.bg](https://www.comet.bg/?cid=92)
 
-**Support links**
+## Used Sources from:
+
+* Core [Arduino IDE](https://github.com/arduino/Arduino)
+* [Esp32](https://github.com/espressif/arduino-esp32)
+* [RasPiArduino](https://github.com/me-no-dev/RasPiArduino)
+* [Google Cloud Platform](https://github.com/GoogleCloudPlatform/google-cloud-iot-arduino)
+* [Amazon AWS](https://github.com/aws)
+* [Microsoft Azure](https://github.com/Azure)
+* [openSSL](https://github.com/openssl/openssl)
+
+## Support links
 
 * https://community.platformio.org
 * https://www.comet.bg/?cid=92
