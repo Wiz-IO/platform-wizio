@@ -48,6 +48,7 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 * [Amazon AWS](https://github.com/aws)
 * [Microsoft Azure](https://github.com/Azure)
 * [openSSL](https://github.com/openssl/openssl)
+* [Eclipse mosquitto](https://github.com/eclipse/mosquitto)
 
 ## Support links
 
