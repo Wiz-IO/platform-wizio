@@ -1,0 +1,31 @@
+{
+  "name": "wizio",
+  "title": "WizIO",
+  "description": "Arduino Simulator 2019 Georgi Angelov",
+  "url": "https://github.com/Wiz-IO/platform-wizio",
+  "homepage": "http://www.wizio.eu/",
+  "license": "Apache-2.0",
+  "engines": { "platformio": "^3.0.0" },
+  "repository": {
+    "type": "",
+    "url": "https://github.com/Wiz-IO/platform-wizio"
+  },
+  "version": "1.0.0",
+  "packageRepositories": [
+    "https://dl.bintray.com/platformio/dl-packages/manifest.json",
+    "http://dl.platformio.org/packages/manifest.json"
+  ],
+  "frameworks": {
+
+      "arduino": {
+        "package": "framework-wizio",
+        "script": "builder/frameworks/arduino.py"
+      }     
+  },
+  "packages": {
+    "framework-wizio": {
+        "type": "framework",
+        "version": ""
+    }
+  }
+}
