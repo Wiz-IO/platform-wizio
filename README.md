@@ -26,7 +26,7 @@ Your sources can work on each Arduino board
 
 ## Install Platform 
 
-First install GCC/MinGW on PC
+First install **MinGW** on your PC
 
 PIO Home > Platforms > Advanced Installation 
 
