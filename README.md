@@ -12,6 +12,7 @@ Your sources can work on each Arduino board
 * Linux/Mac - later
 * Raspberry PI is a Linux - this platform can support the board - later
 * **Please read** [WIKI](https://github.com/Wiz-IO/platform-wizio/wiki)
+* Tested at Windows 7, 8, 10
 
 ![Project](https://raw.githubusercontent.com/Wiz-IO/LIB/master/images//arduino-simulator.png) 
 
