@@ -19,12 +19,12 @@ Your sources can work on each Arduino board
 Futures: https://www.youtube.com/watch?v=yJBK4W-eSJs
 
 
-**Compiler**
-* Windows - MinGW (GCC) - install and add to PATH C:/MinGW/bin;
+## The Compiler
+* Windows - **MinGW** (GCC) - install and add to PATH C:/MinGW/bin;
 * * How to Install MinGW [VIDEO](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
-* Linux GCC
+* Linux - **GCC**
 * * How do I install gcc on Ubuntu Linux [VIDEO](https://www.youtube.com/watch?v=cotkJrewAz0)
-* Mac GCC
+* Mac - **GCC**
 
 
 ## Install Platform 
