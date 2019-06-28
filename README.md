@@ -20,7 +20,7 @@ Futures: https://www.youtube.com/watch?v=yJBK4W-eSJs
 
 
 ## The Compiler
-* Windows - **MinGW** (GCC) - install and add to PATH C:/MinGW/bin;
+* Windows - **MinGW** (GCC) - Install and Add to PATH C:/MinGW/bin;
 * * How to Install MinGW [VIDEO](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
 * Linux - **GCC**
 * * How do I install gcc on Ubuntu Linux [VIDEO](https://www.youtube.com/watch?v=cotkJrewAz0)
