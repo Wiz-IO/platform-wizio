@@ -7,7 +7,7 @@ Can be used for **edication**, testing and debuging, for working with COM Ports,
 Your sources can work on each Arduino board
 
 **A few words in the beginning**
-* **Version: 1.0.0** very beta
+* **Version: 1.0.0** ( very beta - there may be bugs yet )
 * **Windows - for now**
 * Linux/Mac - later
 * Raspberry PI is a Linux - this platform can support the board - later
