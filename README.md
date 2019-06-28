@@ -2,7 +2,7 @@
 
 **Simulator !?!?** Arduino source codes is compiled and executed as PC applications
 
-Can be used for **edication**, testing and debuging, for working with COM Ports, Internet, Math...
+Can be used for **education**, testing and debuging, for working with COM Ports, Internet, Math...
 
 Your sources can work on each Arduino board
 
