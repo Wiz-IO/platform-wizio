@@ -38,7 +38,8 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 **Manual Install / Reinstall**
 
 ## Examples for:
-* GSM AT commands
+* GSM base AT commands
+* Sokets, HTTP/HTTPS
 * MQTT to the clouds Amazon, Google, Azure, Eclipse
 
 ## Thanks to
