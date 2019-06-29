@@ -53,7 +53,7 @@ is probably wrong with your key.
 CloudIoTCoreDevice goo(GOOGLE_PROJECT, GOOGLE_LOCATION, GOOGLE_REGISTRY, GOOGLE_DEVICE, PRIVATE_KEY);
 
 /* 
-  Add to project INI
+  Add to project INI PubSubClient settings
   build_flags = -D MQTT_MAX_PACKET_SIZE=1024 -D MQTT_KEEPALIVE=60
 */
 #include <PubSubClient.h>
