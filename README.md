@@ -20,8 +20,8 @@ Futures: https://www.youtube.com/watch?v=yJBK4W-eSJs
 
 
 ## The Compiler
-* Windows - **MinGW** (GCC) - Install and Add to PATH C:/MinGW/bin;
-* * How to Install MinGW [VIDEO](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
+* Windows - **MinGW-32** (GCC) - Install and Add to PATH C:/MinGW/bin;
+* * How to Install MinGW-32 [VIDEO](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
 * Linux - **GCC**
 * * How do I install gcc on Ubuntu Linux [VIDEO](https://www.youtube.com/watch?v=cotkJrewAz0)
 * Mac - **GCC**
@@ -29,7 +29,7 @@ Futures: https://www.youtube.com/watch?v=yJBK4W-eSJs
 
 ## Install Platform 
 
-First install **MinGW** on your PC
+First install **MinGW-32** on your PC
 
 PIO Home > Platforms > Advanced Installation 
 
