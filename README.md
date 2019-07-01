@@ -38,9 +38,7 @@ https://www.youtube.com/watch?v=SKojOHDvfC0 (visual mode)
 
 ## Install Platform 
 
-First install **MinGW-32** or **GCC** on your PC
-
-For Linux install openSSL: sudo apt-get install libssl-dev
+First install **MinGW-32** or **GCC** on your PC 
 
 **PIO Home** > Platforms > Advanced Installation 
 
