@@ -27,8 +27,9 @@ https://www.youtube.com/watch?v=SKojOHDvfC0 (visual mode)
 
 
 ## The Compiler
-* Windows - **MinGW-32** (GCC) - Install and Add to PATH C:/MinGW/bin;
+* Windows - **MinGW-32** (GCC)
 * * How to Install MinGW-32 [VIDEO](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
+* * Add to PATH C:/MinGW/bin;
 * Linux - **GCC**
 * * How do I install gcc on Ubuntu Linux [VIDEO](https://www.youtube.com/watch?v=cotkJrewAz0)
 * * openSSL: sudo apt-get install libssl-dev
