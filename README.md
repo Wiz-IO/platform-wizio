@@ -69,7 +69,8 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 * [openSSL](https://github.com/openssl/openssl)
 * [Esp32](https://github.com/espressif/arduino-esp32)
 * [RasPiArduino](https://github.com/me-no-dev/RasPiArduino)
-* [Adafruit ](https://github.com/adafruit)
+* [Adafruit](https://github.com/adafruit)
+* [and GitHub](https://github.com)
 
 
 ## Support links
