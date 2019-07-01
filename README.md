@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=yJBK4W-eSJs
 
 https://www.youtube.com/watch?v=5l59TJHoRuc
 
-https://www.youtube.com/watch?v=SKojOHDvfC0 (visual mode)
+https://www.youtube.com/watch?v=SKojOHDvfC0 ( DOOM - visual mode )
 
 
 ## The Compiler
