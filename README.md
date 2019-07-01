@@ -45,10 +45,9 @@ First install **MinGW-32** or **GCC** on your PC
 
 paste https://github.com/Wiz-IO/platform-wizio.git
 
-**Manual Install / Reinstall**
-* Delete / Add folders
-* * .platformio\platforms\wizio
-* * .platformio\packages\framework-wizio
+**Manual Install / Reinstall / Remove**
+* .platformio\platforms\wizio
+* .platformio\packages\framework-wizio
 
 ## Examples for:
 * GSM base AT commands
