@@ -7,12 +7,13 @@ Can be used for **education**, testing and debuging, for working with COM Ports,
 Your sources can work on each Arduino board
 
 **A few words in the beginning**
-* **Version: 1.0.0** ( very beta - may be bugs yet )
+* **Version: 1.0.1** ( very beta - may be bugs yet )
 * **Windows - for now**
-* Linux/Mac - later
+* Linux - beta
+* Mac - later
 * Raspberry PI is a Linux - this platform can support the board - later
 * **Please read** [WIKI](https://github.com/Wiz-IO/platform-wizio/wiki)
-* Tested at Windows 7, 8, 10
+* Tested at Windows 7, 8, 10, Linux Ubuntu
 
 ![Project](https://raw.githubusercontent.com/Wiz-IO/LIB/master/images//arduino-simulator.png) 
 
@@ -28,18 +29,24 @@ https://www.youtube.com/watch?v=5l59TJHoRuc
 * * How to Install MinGW-32 [VIDEO](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
 * Linux - **GCC**
 * * How do I install gcc on Ubuntu Linux [VIDEO](https://www.youtube.com/watch?v=cotkJrewAz0)
+* * openSSL: sudo apt-get install libssl-dev
 * Mac - **GCC**
 
 
 ## Install Platform 
 
-First install **MinGW-32** on your PC
+First install **MinGW-32** or **GCC** on your PC
 
-PIO Home > Platforms > Advanced Installation 
+For Linux install openSSL: sudo apt-get install libssl-dev
+
+**PIO Home** > Platforms > Advanced Installation 
 
 paste https://github.com/Wiz-IO/platform-wizio.git
 
 **Manual Install / Reinstall**
+* Delete / Add folders
+* * .platformio\platforms\wizio
+* * .platformio\packages\framework-wizio
 
 ## Examples for:
 * GSM base AT commands
@@ -61,6 +68,7 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 * [openSSL](https://github.com/openssl/openssl)
 * [Esp32](https://github.com/espressif/arduino-esp32)
 * [RasPiArduino](https://github.com/me-no-dev/RasPiArduino)
+* [Adafruit ](https://github.com/adafruit)
 
 
 ## Support links
