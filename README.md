@@ -15,7 +15,7 @@ Your sources can work on each Arduino board
 * **Please read** [WIKI](https://github.com/Wiz-IO/platform-wizio/wiki)
 * Tested at Windows 7, 8, 10, Linux Ubuntu
 
-![Project](https://raw.githubusercontent.com/Wiz-IO/LIB/master/images//arduino-simulator.png) 
+![Project](https://raw.githubusercontent.com/Wiz-IO/LIB/master/images/arduino-simulator.png) 
 
 Futures: 
 
@@ -32,6 +32,7 @@ https://www.youtube.com/watch?v=5l59TJHoRuc
 * * openSSL: sudo apt-get install libssl-dev
 * Mac - **GCC**
 
+![Project](https://raw.githubusercontent.com/Wiz-IO/LIB/master/images/wizio-linux-ubuntu.png)
 
 ## Install Platform 
 
