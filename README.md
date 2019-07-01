@@ -70,7 +70,6 @@ paste https://github.com/Wiz-IO/platform-wizio.git
 * [Esp32](https://github.com/espressif/arduino-esp32)
 * [RasPiArduino](https://github.com/me-no-dev/RasPiArduino)
 * [Adafruit](https://github.com/adafruit)
-* [and GitHub](https://github.com)
 
 
 ## Support links
