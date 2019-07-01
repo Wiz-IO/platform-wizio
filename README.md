@@ -23,6 +23,8 @@ https://www.youtube.com/watch?v=yJBK4W-eSJs
 
 https://www.youtube.com/watch?v=5l59TJHoRuc
 
+https://www.youtube.com/watch?v=SKojOHDvfC0 (visual mode)
+
 
 ## The Compiler
 * Windows - **MinGW-32** (GCC) - Install and Add to PATH C:/MinGW/bin;
