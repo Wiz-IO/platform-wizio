@@ -9,7 +9,7 @@ Your sources can work on each Arduino board
 **A few words in the beginning**
 * **Version: 1.0.1** ( very beta - may be bugs yet )
 * **Windows - for now**
-* Linux - beta
+* Linux - in progress...
 * Mac - later
 * Raspberry PI is a Linux - this platform can support the board - later
 * **Please read** [WIKI](https://github.com/Wiz-IO/platform-wizio/wiki)
