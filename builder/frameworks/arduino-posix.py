@@ -2,7 +2,10 @@
 # http://www.wizio.eu/
 # https://github.com/Wiz-IO
 
+# sudo apt-get install libssl-dev
+
 import os
+import subprocess
 from os.path import join
 from shutil import copyfile
 from SCons.Script import ARGUMENTS, DefaultEnvironment, Builder
@@ -10,19 +13,9 @@ from SCons.Script import ARGUMENTS, DefaultEnvironment, Builder
 def dev_uploader(target, source, env):   
     FILES_DIR = join(env.PioPlatform().get_package_dir("framework-wizio"), "arduino", "cores", env.BoardConfig().get("build.core"),"files")
     BUILD_DIR = env.get("BUILD_DIR")
-    
-    #### copy dll-s if not exist
-    DST = join(BUILD_DIR, "libcrypto-1_1.dll")
-    if False == os.path.isfile(DST):
-        copyfile(join(FILES_DIR, "libcrypto-1_1.dll"), DST)
-
-    DST = join(BUILD_DIR, "libssl-1_1.dll")    
-    if False == os.path.isfile(DST):
-        copyfile(join(FILES_DIR, "libssl-1_1.dll"), DST)
-    
-    ### run app
-    exe = join(BUILD_DIR, "program.exe")
-    os.startfile(exe)
+    prg = join(BUILD_DIR, "program")
+    subprocess.call(['gnome-terminal', '-x', prg])
+ 
     return 
 
 def dev_nope(target, source, env):
@@ -44,19 +37,23 @@ def dev_compiler(env):
         SIZEDATAREGEXP=r"^(?:\.data|\.bss|\.noinit)\s+(\d+).*",
         SIZECHECKCMD="$SIZETOOL -A -d $SOURCES",
         SIZEPRINTCMD='$SIZETOOL --mcu=$BOARD_MCU -C -d $SOURCES',
-        PROGSUFFIX=".exe",  
+        PROGSUFFIX="",  
     )
     env.Append(UPLOAD_PORT='RUN APPLICATION') #upload_port = "must exist variable"
 
 def dev_init(env, platform):
-    print "PC:", env.get("PLATFORM")
     dev_compiler(env)
     framework_dir = env.PioPlatform().get_package_dir("framework-wizio")
-    core = env.BoardConfig().get("build.core")     
+    PC = env.get("PLATFORM")
+    if PC.startswith("posix"):
+        core = "posix"   
+    print "CORE:", core   
     variant = env.BoardConfig().get("build.variant")   
+
     env.Append(
        CPPDEFINES = [ # -D 
-            "{}=200".format(platform.upper()), "CORE_" + core.upper().replace("-", "_"), #"__RPCNDR_H_VERSION=3"
+            "{}=200".format(platform.upper()), 
+            "CORE_" + core.upper().replace("-", "_"),
         ],        
         CPPPATH = [ # -I
             join(framework_dir,  platform, platform),
@@ -80,9 +77,9 @@ def dev_init(env, platform):
         ],    
         CCFLAGS = [
             "-Os", "-g",                                
-            #"-fdata-sections",      
-            #"-ffunction-sections",
-            #"-fno-strict-aliasing",
+            "-fdata-sections",      
+            "-ffunction-sections",
+            "-fno-strict-aliasing",
             #"-fsingle-precision-constant",             
             "-Wall", 
             "-Wstrict-prototypes", 
@@ -90,34 +87,23 @@ def dev_init(env, platform):
                
         ],        
         LINKFLAGS = [                                                        
-            #"-lws2_32", 
             #"-liphlpapi", 
             #"-static-libgcc", 
-            #"-static-libstdc++",
-            
-            #### VISUAL
-            #"-Wl,--subsystem,windows"
-           
+            #"-static-libstdc++",          
             #"-Wl,--gc-sections",            
         ],    
         LIBPATH = [ 
             #lib_dir, 
-            join(framework_dir, platform, "cores", core, "files")
+            #join(framework_dir, platform, "cores", core, "files")
         ],      
         #LDSCRIPT_PATH = linker, 
         LIBS = [ 
-            "m", "gcc", 
-            "libws2_32",                 
+            "m", "gcc",                 
             "libcrypto",
             "libssl",
-            "winmm", # timeGetTime()
-            
-            #### VISUAL
-            #"libcomctl32",
-            #"libgdi32"
         ],     
         LIBSOURCE_DIRS=[ 
-            join(framework_dir, platform, "libraries", core),             
+            join(framework_dir, platform, "libraries"),             
         ],   
                 
         BUILDERS = dict(

@@ -1,11 +1,11 @@
 {
-  "name": "WizIO Emulator",
+  "name": "WizIO Windows Emulator",
   "url": "",
   "build": {
-    "core": "win",
-    "mcu": "PC",    
+    "core": "windows",
+    "mcu": "",    
     "f_cpu": "100000000L",
-    "variant": "emulator"
+    "variant": "emu-windows"
   },
   "debug": {
     "tools": {
