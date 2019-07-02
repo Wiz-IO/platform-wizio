@@ -15,15 +15,11 @@ OR you can create normal GCC project: [read this](https://github.com/Wiz-IO/plat
 * Mac - later
 * Raspberry PI is a Linux - this platform can support the board - later
 * **Please read** [WIKI](https://github.com/Wiz-IO/platform-wizio/wiki)
-* Tested at Windows 7, 8, 10, Linux Ubuntu
+* Tested at Windows 7, 8, 10, Ubuntu Linux 
 
 ![Project](https://raw.githubusercontent.com/Wiz-IO/LIB/master/images/arduino-simulator.png) 
 
-Futures: 
-
-https://www.youtube.com/watch?v=yJBK4W-eSJs
-
-https://www.youtube.com/watch?v=5l59TJHoRuc
+VIDEO: 
 
 https://www.youtube.com/watch?v=SKojOHDvfC0 ( DOOM - visual mode )
 
@@ -33,7 +29,7 @@ https://www.youtube.com/watch?v=SKojOHDvfC0 ( DOOM - visual mode )
 * * How to Install MinGW-32 [VIDEO](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
 * * Add to PATH C:/MinGW/bin;
 * Linux - **GCC**
-* * How do I install gcc on Ubuntu Linux [VIDEO](https://www.youtube.com/watch?v=cotkJrewAz0)
+* * How to Install GCC on Ubuntu Linux [VIDEO](https://www.youtube.com/watch?v=cotkJrewAz0)
 * * openSSL: sudo apt-get install libssl-dev
 * Mac - **GCC**
 
