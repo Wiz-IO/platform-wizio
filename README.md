@@ -6,10 +6,10 @@ Can be used for **education**, testing and debuging, for working with Comm Ports
 
 Your source codes can work on each Arduino board
 
-OR you can create normal GCC project: [read this](https://github.com/Wiz-IO/platform-wizio/wiki/GCC-Project)
+OR you can create normal GCC project [read this](https://github.com/Wiz-IO/platform-wizio/wiki/GCC-Project)
 
 **A few words in the beginning**
-* **Version: 1.0.1** ( very beta - may be bugs yet )
+* **Version: 1.0.3** ( very beta - may be bugs yet )
 * **Windows** ( and visual mode )
 * Linux - in progress...
 * Mac - later
@@ -41,7 +41,7 @@ First install **MinGW-32** or **GCC** on your PC
 
 **PIO Home** > Platforms > Advanced Installation 
 
-paste https://github.com/Wiz-IO/platform-wizio.git
+paste link https://github.com/Wiz-IO/platform-wizio.git
 
 **Manual Install / Reinstall / Remove**
 * .platformio\platforms\wizio
