@@ -10,7 +10,7 @@
     "type": "",
     "url": "https://github.com/Wiz-IO/platform-wizio.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.3",
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
     "http://dl.platformio.org/packages/manifest.json"
