@@ -6,7 +6,7 @@ Can be used for **education**, testing and debuging, for working with Comm Ports
 
 Your source codes can work on each Arduino board
 
-OR you can create normal GCC project: [read this](https://github.com/Wiz-IO/platform-wizio/wiki)
+OR you can create normal GCC project: [read this](https://github.com/Wiz-IO/platform-wizio/wiki/GCC-Project)
 
 **A few words in the beginning**
 * **Version: 1.0.1** ( very beta - may be bugs yet )
