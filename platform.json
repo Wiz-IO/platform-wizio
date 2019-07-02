@@ -16,11 +16,14 @@
     "http://dl.platformio.org/packages/manifest.json"
   ],
   "frameworks": {
-
       "arduino": {
         "package": "framework-wizio",
         "script": "builder/frameworks/arduino.py"
-      }     
+      },   
+      "gcc": {
+        "package": "framework-wizio",
+        "script": "builder/frameworks/gcc.py"
+      }         
   },
   "packages": {
     "framework-wizio": {
