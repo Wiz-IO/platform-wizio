@@ -1,5 +1,5 @@
 {
-  "name": "WizIO Windows Emulator",
+  "name": "WizIO Arduino Simulator ( WINDOWS )",
   "url": "",
   "build": {
     "core": "windows",

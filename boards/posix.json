@@ -1,5 +1,5 @@
 {
-  "name": "WizIO Linux Emulator",
+  "name": "WizIO Arduino Simulator ( POSIX )",
   "url": "",
   "build": {
     "core": "posix",

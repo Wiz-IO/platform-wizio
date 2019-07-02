@@ -18,26 +18,21 @@
 #   https://github.com/Wiz-IO
 # 
 ##########################################################################
-
 from os.path import join
 from SCons.Script import (AlwaysBuild, Builder, COMMAND_LINE_TARGETS, Default, DefaultEnvironment)
 from colorama import Fore
-
 env = DefaultEnvironment()
-print(Fore.GREEN + '<<<<<<<<<<<< '+env.BoardConfig().get("name").upper()+" 2018 Georgi Angelov >>>>>>>>>>>>")
-
+print(Fore.GREEN + '<<<<<<<<<<<< '+env.BoardConfig().get("name").upper()+" 2019 Georgi Angelov >>>>>>>>>>>>")
+#print env.Dump()
 ####################################################
 # Build executable and linkable program
 ####################################################
 elf = env.BuildProgram()
-src = env.MakeHeader( join("$BUILD_DIR", "${PROGNAME}"), env.ElfToBin(join("$BUILD_DIR", "${PROGNAME}"), elf) )
-AlwaysBuild( src )
-
-upload = env.Alias("upload", src, [ 
-    env.VerboseAction(env.AutodetectUploadPort, "Looking for upload port..."),
-    env.VerboseAction("$UPLOADCMD", '\033[93m'+"Uploading: $PROGNAME"),
-    env.VerboseAction("", '\033[93m'+"Ready"),
-])
+AlwaysBuild( elf )
+upload = env.Alias(
+    "upload", elf, 
+    [ 
+        env.VerboseAction("$UPLOADCMD", '\033[93m'+"Runing $PROGNAME"),
+    ])
 AlwaysBuild( upload )    
-
-Default( src )
+Default( elf )
