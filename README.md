@@ -2,9 +2,11 @@
 
 **Simulator !?!?** Arduino source codes is compiled and executed as PC applications
 
-Can be used for **education**, testing and debuging, for working with COM Ports, Internet, Math...
+Can be used for **education**, testing and debuging, for working with Comm Ports, Internet, Math ...
 
-Your sources can work on each Arduino board
+Your source codes can work on each Arduino board
+
+OR you can create normal GCC project: [read this](https://github.com/Wiz-IO/platform-wizio/wiki)
 
 **A few words in the beginning**
 * **Version: 1.0.1** ( very beta - may be bugs yet )
