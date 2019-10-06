@@ -80,6 +80,6 @@ def dev_init(env, platform):
         env.Append(LIBS="libssl")             
 
 ######################################################
-#print env.Dump()
+#print( env.Dump() )
 dev_init(DefaultEnvironment(), "gcc")    
 ######################################################
