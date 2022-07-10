@@ -6,7 +6,7 @@ from __future__ import print_function
 from SCons.Script import DefaultEnvironment
 
 env = DefaultEnvironment()
-platform = "arduino"
+platform = "boot2"
 module = platform + "-" + env.BoardConfig().get("build.core")
 m = __import__(module)
 globals()[module] = m

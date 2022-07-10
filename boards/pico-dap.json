@@ -1,0 +1,24 @@
+{
+  "name": "WizIO - Raspberry Pi Pico ( CMSIS-DAP )",
+  "url": "https://github.com",
+  "vendor": "Raspberry Pi",  
+  "frameworks": [ "baremetal", "arduino" ],
+
+  "build": {
+    "core"      : "RP2040",
+    "variant"   : "raspberry-pi-pico",    
+    "f_cpu"     : "125000000L",
+    "mcu"       : "RP2040"
+  },
+
+  "debug": {
+    "openocd_target" : "rp2040-core0.cfg",
+    "svd_path"       : "rp2040.svd"
+  },  
+
+  "upload": {
+    "maximum_ram_size" :  262144,
+    "maximum_size"     : 2097152, 
+    "protocol"         : "uf2"        
+  }
+}

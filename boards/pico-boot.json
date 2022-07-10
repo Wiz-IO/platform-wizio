@@ -1,0 +1,27 @@
+{
+  "name": "WizIO-PICO BOOT STAGE 2 HELPER",
+  "url": "https://github.com",
+  "build": {
+    "core": "pico",
+    "variant": "pico",    
+    "uploader": "pico-none",
+    "f_cpu": "133000000L",
+    "mcu": "RP2040"
+  },
+  "debug": {
+    "tools": {
+      "uart": {
+        "onboard": true,
+        "extra_cmds": [],
+        "load_cmd": [],
+        "server": {}
+      }
+    }
+  },  
+  "frameworks": ["boot2"],
+  "vendor": "WizIO",
+  "upload": {
+        "maximum_ram_size":  262144,
+        "maximum_size"    : 2097152
+  }
+}

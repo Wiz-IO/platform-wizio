@@ -1,34 +1,54 @@
 {
-  "name": "wizio",
-  "title": "WizIO",
-  "description": "Arduino Simulator 2019 Georgi Angelov",
-  "url": "https://github.com/Wiz-IO/platform-wizio",
+  "name": "wizio-pico",
+  "title": "WizIO - Raspberry Pi Pico",
+  "description": "Development platform for Raspberry Pi Pico 2021 Georgi Angelov",
   "homepage": "http://www.wizio.eu/",
   "license": "Apache-2.0",
-  "engines": { "platformio": "^3.0.0" },
-  "repository": {
-    "type": "",
-    "url": "https://github.com/Wiz-IO/platform-wizio.git"
+  "engines": {
+    "platformio": "^5"
   },
-  "version": "1.0.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wiz-IO/wizio-pico.git"
+  },
+  "version": "1.1.1",
   "packageRepositories": [
-    "https://dl.bintray.com/platformio/dl-packages/manifest.json",
     "http://dl.platformio.org/packages/manifest.json"
   ],
   "frameworks": {
+      "baremetal": {
+        "package": "framework-wizio-pico",
+        "script": "builder/frameworks/sdk.py"
+      },
       "arduino": {
-        "package": "framework-wizio",
+        "package": "framework-wizio-pico",
         "script": "builder/frameworks/arduino.py"
-      },   
-      "gcc": {
-        "package": "framework-wizio",
-        "script": "builder/frameworks/gcc.py"
-      }         
+      },
+      "boot2": {
+        "package": "framework-wizio-pico",
+        "script": "builder/frameworks/boot2.py"
+      }
+
   },
   "packages": {
-    "framework-wizio": {
+    "framework-wizio-pico": {
         "type": "framework",
-        "version": "https://github.com/Wiz-IO/framework-wizio.git"
-    }
+        "version": "https://github.com/Wiz-IO/framework-wizio-pico.git"
+    },
+    "toolchain-gccarmnoneeabi": {
+        "owner": "platformio",
+        "type": "toolchain",
+        "version": "~1.70201.0"
+    },
+    "tool-wizio-pico": {
+        "type": "uploader",
+        "version": "https://github.com/Wiz-IO/tool-wizio-pico.git"
+    }, 
+    "tool-pico-openocd": {
+      "optional": true,
+      "type": "debugger",
+      "version": "https://github.com/Wiz-IO/tool-pico-openocd"
+    } 
+
   }
 }

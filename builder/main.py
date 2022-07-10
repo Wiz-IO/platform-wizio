@@ -1,38 +1,35 @@
-# Copyright 2014-present PlatformIO <contact@platformio.org>
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-##########################################################################
-# Autor: WizIO 2018 Georgi Angelov
+# WizIO 2021 Georgi Angelov
 #   http://www.wizio.eu/
-#   https://github.com/Wiz-IO
-# 
-##########################################################################
+#   https://github.com/Wiz-IO/wizio-pico
+
+from __future__ import print_function
 from os.path import join
 from SCons.Script import (AlwaysBuild, Builder, COMMAND_LINE_TARGETS, Default, DefaultEnvironment)
 from colorama import Fore
+from wpioasm import dev_pioasm # https://github.com/Wiz-IO/wizio-pico/issues/98#issuecomment-1128747885
+
 env = DefaultEnvironment()
-print(Fore.GREEN + '<<<<<<<<<<<< '+env.BoardConfig().get("name").upper()+" 2019 Georgi Angelov >>>>>>>>>>>>")
-#print( env.Dump )
-####################################################
-# Build executable and linkable program
-####################################################
+print( '<<<<<<<<<<<< ' + env.BoardConfig().get("name").upper() + " 2021 Georgi Angelov >>>>>>>>>>>>" )
+
+dev_pioasm(env)
+
 elf = env.BuildProgram()
-AlwaysBuild( elf )
-upload = env.Alias(
-    "upload", elf, 
-    [ 
-        env.VerboseAction("$UPLOADCMD", '\033[93m'+"Runing $PROGNAME"),
-    ])
+src = env.ElfToBin( join("$BUILD_DIR", "${PROGNAME}"), elf )
+prg = env.Alias( "buildprog", src, [ env.VerboseAction("", "DONE") ] )
+AlwaysBuild( prg )
+
+upload = env.Alias("upload", prg, [ 
+    env.VerboseAction("$UPLOADCMD", "Uploading..."),
+    env.VerboseAction("", ""),
+])
 AlwaysBuild( upload )    
-Default( elf )
+
+debug_tool = env.GetProjectOption("debug_tool")
+if None == debug_tool:
+    Default( prg )
+else:   
+    if 'cmsis-dap' in debug_tool:
+        Default( upload )
+    else:
+        Default( prg )
+
