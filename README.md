@@ -30,8 +30,11 @@ https://www.youtube.com/watch?v=SKojOHDvfC0 ( DOOM - visual mode )
 * * Add to PATH C:/MinGW/bin;
 * Linux - **GCC**
 * * How to Install GCC on Ubuntu Linux [VIDEO](https://www.youtube.com/watch?v=cotkJrewAz0)
-* * openSSL: sudo apt-get install libssl-dev
+* * openSSL: `sudo apt-get install libssl-dev`
 * Mac - **GCC**
+* * `brew install gcc`
+* * Optional: gtk4 for graphics: `brew install gtk4`
+* * Use `board=posix` in platformio.ini
 
 ![Project](https://raw.githubusercontent.com/Wiz-IO/LIB/master/images/wizio-linux-ubuntu.png)
 
